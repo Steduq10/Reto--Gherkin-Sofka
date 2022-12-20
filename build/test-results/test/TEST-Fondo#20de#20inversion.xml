@@ -1,54 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Fondo de inversion" tests="3" skipped="0" failures="2" errors="0" timestamp="2022-12-20T21:29:31" hostname="DESKTOP-RCPLA2L" time="0.24">
+<testsuite name="Fondo de inversion" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-20T23:10:41" hostname="DESKTOP-55HG94M" time="0.105">
   <properties/>
-  <testcase name="01 - Adquirir cuenta en fondo de inversion de renta fija #1" classname="Fondo de inversion" time="0.199"/>
-  <testcase name="01 - Adquirir cuenta en fondo de inversion de renta fija #2" classname="Fondo de inversion" time="0.024">
-    <failure message="org.junit.ComparisonFailure: expected:&lt;2[0].000&gt; but was:&lt;2[5].000&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;2[0].000&gt; but was:&lt;2[5].000&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinitions.FondoInversionFijoSteps.laInversionEsExitosa(FondoInversionFijoSteps.java:24)
-	at ✽.la inversion es exitosa.(file:///C:/Projects/reto%20gherkin/src/test/resources/features/FondoInversionFijo.feature:6)
-</failure>
-  </testcase>
-  <testcase name="01 - Adquirir cuenta en fondo de inversion de renta fija #3" classname="Fondo de inversion" time="0.016">
-    <failure message="org.junit.ComparisonFailure: expected:&lt;[4]5.000&gt; but was:&lt;[2]5.000&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[4]5.000&gt; but was:&lt;[2]5.000&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinitions.FondoInversionFijoSteps.laInversionEsExitosa(FondoInversionFijoSteps.java:24)
-	at ✽.la inversion es exitosa.(file:///C:/Projects/reto%20gherkin/src/test/resources/features/FondoInversionFijo.feature:6)
-</failure>
-  </testcase>
+  <testcase name="04 - Usuario quiere esar una divisa para el  plazo renta fija #1" classname="Fondo de inversion" time="0.092"/>
+  <testcase name="04 - Usuario quiere esar una divisa para el  plazo renta fija #2" classname="Fondo de inversion" time="0.007"/>
+  <testcase name="04 - Usuario quiere esar una divisa para el  plazo renta fija #3" classname="Fondo de inversion" time="0.006"/>
   <system-out><![CDATA[
-Scenario Outline: 01 - Adquirir cuenta en fondo de inversion de renta fija ?[90m# src/test/resources/features/FondoInversionFijo.feature:10?[0m
-  ?[32mGiven ?[0m?[32mun usuario requiere una inversion de renta fija?[0m                    ?[90m# stepdefinitions.FondoInversionFijoSteps.unUsuarioRequiereUnaInversionDeRentaFija()?[0m
-When 
-  ?[32mWhen ?[0m?[32mcumple los requisitos minimos del monto de inversion ?[0m?[32m?[1m"25.000"?[0m?[32m COP?[0m   ?[90m# stepdefinitions.FondoInversionFijoSteps.cumpleLosRequisitosMinimosDelMontoDeInversionCOP(java.lang.String)?[0m
-FINALIZA PRUEBA
-  ?[32mThen ?[0m?[32mla inversion es exitosa.?[0m                                            ?[90m# stepdefinitions.FondoInversionFijoSteps.laInversionEsExitosa()?[0m
+Scenario Outline: 04 - Usuario quiere esar una divisa para el  plazo renta fija ?[90m# src/test/resources/features/FondoInversionDivisa.feature:10?[0m
+Iniciar Prueba
+  ?[32mGiven ?[0m?[32mun usuario requiere seleccionar la divisa para  su inversion?[0m            ?[90m# stepdefinitions.FondoInversionDivisa.unUsuarioRequiereSeleccionarLaDivisaParaSuInversion()?[0m
+  ?[32mWhen ?[0m?[32mabrir una cuenta de fondo de inversion  en ?[0m?[32m?[1m"Pesos"?[0m?[32m divisa?[0m                ?[90m# stepdefinitions.FondoInversionDivisa.abrirUnaCuentaDeFondoDeInversionEnDivisa(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mdivisa seleccionada con  exito?[0m                                           ?[90m# stepdefinitions.FondoInversionDivisa.divisaSeleccionadaConExito()?[0m
 
-Scenario Outline: 01 - Adquirir cuenta en fondo de inversion de renta fija ?[90m# src/test/resources/features/FondoInversionFijo.feature:11?[0m
-  ?[32mGiven ?[0m?[32mun usuario requiere una inversion de renta fija?[0m                    ?[90m# stepdefinitions.FondoInversionFijoSteps.unUsuarioRequiereUnaInversionDeRentaFija()?[0m
-When 
-  ?[32mWhen ?[0m?[32mcumple los requisitos minimos del monto de inversion ?[0m?[32m?[1m"20.000"?[0m?[32m COP?[0m   ?[90m# stepdefinitions.FondoInversionFijoSteps.cumpleLosRequisitosMinimosDelMontoDeInversionCOP(java.lang.String)?[0m
-  ?[31mThen ?[0m?[31mla inversion es exitosa.?[0m                                            ?[90m# stepdefinitions.FondoInversionFijoSteps.laInversionEsExitosa()?[0m
-      ?[31morg.junit.ComparisonFailure: expected:<2[0].000> but was:<2[5].000>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinitions.FondoInversionFijoSteps.laInversionEsExitosa(FondoInversionFijoSteps.java:24)
-	at âœ½.la inversion es exitosa.(file:///C:/Projects/reto%20gherkin/src/test/resources/features/FondoInversionFijo.feature:6)
-?[0m
+Scenario Outline: 04 - Usuario quiere esar una divisa para el  plazo renta fija ?[90m# src/test/resources/features/FondoInversionDivisa.feature:11?[0m
+Iniciar Prueba
+  ?[32mGiven ?[0m?[32mun usuario requiere seleccionar la divisa para  su inversion?[0m            ?[90m# stepdefinitions.FondoInversionDivisa.unUsuarioRequiereSeleccionarLaDivisaParaSuInversion()?[0m
+  ?[32mWhen ?[0m?[32mabrir una cuenta de fondo de inversion  en ?[0m?[32m?[1m"Dollares"?[0m?[32m divisa?[0m             ?[90m# stepdefinitions.FondoInversionDivisa.abrirUnaCuentaDeFondoDeInversionEnDivisa(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mdivisa seleccionada con  exito?[0m                                           ?[90m# stepdefinitions.FondoInversionDivisa.divisaSeleccionadaConExito()?[0m
 
-Scenario Outline: 01 - Adquirir cuenta en fondo de inversion de renta fija ?[90m# src/test/resources/features/FondoInversionFijo.feature:12?[0m
-  ?[32mGiven ?[0m?[32mun usuario requiere una inversion de renta fija?[0m                    ?[90m# stepdefinitions.FondoInversionFijoSteps.unUsuarioRequiereUnaInversionDeRentaFija()?[0m
-When 
-  ?[32mWhen ?[0m?[32mcumple los requisitos minimos del monto de inversion ?[0m?[32m?[1m"45.000"?[0m?[32m COP?[0m   ?[90m# stepdefinitions.FondoInversionFijoSteps.cumpleLosRequisitosMinimosDelMontoDeInversionCOP(java.lang.String)?[0m
-  ?[31mThen ?[0m?[31mla inversion es exitosa.?[0m                                            ?[90m# stepdefinitions.FondoInversionFijoSteps.laInversionEsExitosa()?[0m
-      ?[31morg.junit.ComparisonFailure: expected:<[4]5.000> but was:<[2]5.000>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinitions.FondoInversionFijoSteps.laInversionEsExitosa(FondoInversionFijoSteps.java:24)
-	at âœ½.la inversion es exitosa.(file:///C:/Projects/reto%20gherkin/src/test/resources/features/FondoInversionFijo.feature:6)
-?[0m
+Scenario Outline: 04 - Usuario quiere esar una divisa para el  plazo renta fija ?[90m# src/test/resources/features/FondoInversionDivisa.feature:12?[0m
+Iniciar Prueba
+  ?[32mGiven ?[0m?[32mun usuario requiere seleccionar la divisa para  su inversion?[0m            ?[90m# stepdefinitions.FondoInversionDivisa.unUsuarioRequiereSeleccionarLaDivisaParaSuInversion()?[0m
+  ?[32mWhen ?[0m?[32mabrir una cuenta de fondo de inversion  en ?[0m?[32m?[1m"Libras"?[0m?[32m divisa?[0m               ?[90m# stepdefinitions.FondoInversionDivisa.abrirUnaCuentaDeFondoDeInversionEnDivisa(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mdivisa seleccionada con  exito?[0m                                           ?[90m# stepdefinitions.FondoInversionDivisa.divisaSeleccionadaConExito()?[0m
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

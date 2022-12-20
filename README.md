@@ -1,3 +1,7 @@
 # Reto-Gherkin-
-# Reto-Gherkin-
-# Reto--Gherkin-Sofka
+
+
+# Integrantes
+
+>Steven Duque  
+>Alexander Reyes
